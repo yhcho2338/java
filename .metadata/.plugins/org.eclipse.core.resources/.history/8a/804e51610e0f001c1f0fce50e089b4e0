@@ -1,0 +1,18 @@
+package FileWriterExam01;
+
+public class exercise04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 7;
+		byte b = (byte)a;
+		short c = (short)a;	
+		
+		System.out.println(a);
+		System.out.println(b+c);
+		
+		
+
+	}
+
+}

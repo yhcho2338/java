@@ -1,0 +1,38 @@
+package FileWriterExam01;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class exercise01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		char[] a = {'a'};
+		int i = 300;
+		long l = 7800000L;
+		FileWriter fw = null;
+		
+		
+		try {
+			fw = new FileWriter("selfexam01.txt");
+			fw.write(a);
+			fw.write((int)i);
+			fw.write((int)l);
+			
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				fw.close();
+			}
+			catch (IOException e) {
+				System.out.println(e);
+			}
+			
+		}
+	}
+
+}

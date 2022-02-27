@@ -1,0 +1,14 @@
+package FileWriterExam01;
+
+public class exercise03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		byte[] list = {'a', 'b', 'c'};
+		list[0] = 10;
+				System.out.println((byte)list[0]);
+
+	}
+
+}
